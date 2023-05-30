@@ -15,4 +15,12 @@ public class Article {
 		this.updateDate = updateDate;
 	
 	}
+
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", title=" + title + ", body=" + body + ", regDate=" + regDate + ", updateDate="
+				+ updateDate + "]";
+	}
+
+	
 }

@@ -26,7 +26,7 @@ public class JDBCSelectTest {
 			conn = DriverManager.getConnection(url, "root", "");
 			
 			String sql = "SELECT * FROM article";
-			sql += " ORDERBY id DESC;";
+			sql += " ORDER BY id DESC;";
 			
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
@@ -42,9 +42,6 @@ public class JDBCSelectTest {
 				articles.add(article);
 				
 			}
-			
-			
-			
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패");
