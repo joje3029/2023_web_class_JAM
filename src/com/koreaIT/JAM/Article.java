@@ -4,9 +4,15 @@ public class Article {
 	int id;
 	String title;
 	String body;
-	public Article(int id, String title, String body) {
-		this.id = id;
-		this.body = body;
+	String regDate;
+	String updateDate;
+	
+	public Article(int id, String regDate, String updateDate, String title, String body) {
+		this.id =id;
 		this.title = title;
+		this.body = body;
+		this.regDate = regDate;
+		this.updateDate = updateDate;
+	
 	}
 }
